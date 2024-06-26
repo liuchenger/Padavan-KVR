@@ -71,7 +71,7 @@ jobs:
         sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENVPN/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_ADBYBY/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_DDNSTO/d' .config
-        sed -i '/CONFIG_32M_REBOOT_FIXUP/d' .config
+        #sed -i '/CONFIG_32M_REBOOT_FIXUP/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SOCAT/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_MSD_LITE/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_MINIDLNA/d' .config
@@ -81,7 +81,7 @@ jobs:
         ##内网穿透
         #echo "CONFIG_FIRMWARE_INCLUDE_NPC=y" >> .config 
         echo "CONFIG_FIRMWARE_INCLUDE_ZEROTIER=y" >> .config #zerotier ~1.3M
-        echo "CONFIG_FIRMWARE_INCLUDE_FRPC=y" >> .config  #frpc
+        #echo "CONFIG_FIRMWARE_INCLUDE_FRPC=y" >> .config  #frpc
         echo "CONFIG_FIRMWARE_INCLUDE_ALIDDNS=y" >> .config #aliddns
         ##科学上网##
         echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> .config
@@ -91,7 +91,7 @@ jobs:
         #echo "CONFIG_FIRMWARE_INCLUDE_SSOBFS=y" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=y" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_DDNSTO=y" >> .config
-        echo "CONFIG_32M_REBOOT_FIXUP=y" >> .config
+        #echo "CONFIG_32M_REBOOT_FIXUP=y" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_SOCAT=y" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_MSD_LITE=y" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_MINIDLNA=y" >> .config
